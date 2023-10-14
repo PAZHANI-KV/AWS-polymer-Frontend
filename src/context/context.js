@@ -20,7 +20,7 @@ export function DataProvider({ children }) {
     try {
       dispatch({ type: ACTION.CALL_API });
       let response = await axios.get(
-        "https://aws-backend-ug5t.onrender.com/repo",
+        "https://aws-polymer-ymgn.onrender.com/repo",
         { params: selectTags }
       );
       dispatch({ type: ACTION.SUCCESS, payload: response.data });
